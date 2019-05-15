@@ -49,7 +49,7 @@ static UIInterfaceOrientationMask _orientation = UIInterfaceOrientationMaskAll;
         _lastDeviceOrientation = (UIInterfaceOrientation) [UIDevice currentDevice].orientation;
         _isLocking = NO;
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) name:@"UIApplicationDidChangeStatusBarFrameNotification" object:nil];
         [self addListener:@"orientationDidChange"];
     }
     return self;
