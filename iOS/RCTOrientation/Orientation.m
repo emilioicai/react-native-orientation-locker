@@ -89,7 +89,7 @@ static UIInterfaceOrientationMask _orientation = UIInterfaceOrientationMaskAll;
 }
 
 - (NSString *)getOrientationStr: (UIInterfaceOrientation)orientation {
-    
+    NSLog(@"%@",orientation);    
     NSString *orientationStr;
     switch (orientation) {
         case UIInterfaceOrientationPortrait:
